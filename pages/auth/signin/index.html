@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mamarecipe - Sign In</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="signin.style.css" />
+  </head>
+
+  <body>
+    <main class="wrapper">
+      <div class="banner">
+        <div class="logo">
+          <img src="../../../assets/logo.svg" alt="mamarecipe logo" />
+          <p>Mama Recipe.</p>
+        </div>
+      </div>
+
+      <div class="auth">
+        <h1>Welcome</h1>
+        <p>Log in into your existing account</p>
+
+        <div class="hl"></div>
+
+        <form action="/pages/landingpage" class="credential-form">
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            class="input"
+            id="email"
+            placeholder="example@mail.com"
+            required
+          />
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            class="input"
+            id="password"
+            placeholder="Password"
+            required
+          />
+
+          <div class="tnc">
+            <input type="checkbox" required />
+            <span>I agree to terms & condition</span>
+          </div>
+
+          <button class="signin-btn">Log In</button>
+
+          <small class="forgot-password">
+            <a href="/pages/auth/forgotpassword">Forgot Password?</a>
+          </small>
+
+          <p class="toSignup">
+            Don't have an account? <a href="/pages/auth/signup">Sign Up</a>
+          </p>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

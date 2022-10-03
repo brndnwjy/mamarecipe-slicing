@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mamarecipe - Reset Password</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="resetpassword.style.css" />
+  </head>
+
+  <body>
+    <main class="wrapper">
+      <div class="banner">
+        <div class="logo">
+          <img src="../../../assets/logo.svg" alt="mamarecipe logo" />
+          <p>Mama Recipe.</p>
+        </div>
+      </div>
+
+      <div class="auth">
+        <div class="hl"></div>
+
+        <form action="/pages/auth/signin" class="credential-form">
+          <label for="password">Create New Password</label>
+          <input
+            type="password"
+            class="input"
+            id="password"
+            placeholder="Enter your password"
+            required
+          />
+
+          <label for="password-confirm">Confirm Password</label>
+          <input
+            type="password"
+            class="input"
+            id="password-confirm"
+            placeholder="Re-enter your password"
+            required
+          />
+
+          <div class="tnc">
+            <input type="checkbox" required />
+            <span>I agree to terms & condition</span>
+          </div>
+
+          <button class="reset-btn">Reset Password</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mamarecipe - Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="signup.style.css" />
+  </head>
+
+  <body>
+    <main class="wrapper">
+      <div class="banner">
+        <div class="logo">
+          <img src="../../../assets/logo.svg" alt="mamarecipe logo" />
+          <p>Mama Recipe.</p>
+        </div>
+      </div>
+
+      <div class="auth">
+        <h1>Let's Get Started!</h1>
+        <p>Create new account to access all features</p>
+
+        <div class="hl"></div>
+
+        <form action="/pages/auth/signin" class="credential-form">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            class="input"
+            id="name"
+            placeholder="Enter your name"
+            required
+          />
+
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            class="input"
+            id="email"
+            placeholder="Enter e-mail address"
+            required
+          />
+
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            class="input"
+            id="phone"
+            placeholder="Enter phone number"
+            required
+          />
+
+          <label for="password">Create New Password</label>
+          <input
+            type="password"
+            class="input"
+            id="password"
+            placeholder="Enter your password"
+            required
+          />
+
+          <label for="password-confirm">Confirm Password</label>
+          <input
+            type="password"
+            class="input"
+            id="password-confirm"
+            placeholder="Re-enter your password"
+            required
+          />
+
+          <div class="tnc">
+            <input type="checkbox" required />
+            <span>I agree to terms & condition</span>
+          </div>
+
+          <button class="signup-btn">Register Account</button>
+
+          <p class="toSignin">
+            Already have an account? <a href="/pages/auth/signin">Log In Here</a>
+          </p>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

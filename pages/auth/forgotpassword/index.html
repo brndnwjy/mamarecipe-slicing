@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mamarecipe - Forgot Password</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="forgotpassword.style.css" />
+  </head>
+
+  <body>
+    <main class="wrapper">
+      <div class="banner">
+        <div class="logo">
+          <img src="../../../assets/logo.svg" alt="mamarecipe logo" />
+          <p>Mama Recipe.</p>
+        </div>
+      </div>
+
+      <div class="auth">
+        <h1>Forgot Password?</h1>
+        <p>We just need your registered e-mail address to send your password</p>
+
+        <div class="hl"></div>
+
+        <form action="/pages/auth/verification/" class="credential-form">
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            class="input"
+            id="email"
+            placeholder="Enter e-mail address"
+            required
+           />
+
+          <button class="sendmail-btn">Send E-mail</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

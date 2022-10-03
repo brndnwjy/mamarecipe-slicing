@@ -1,0 +1,32 @@
+const myrecipebtn = document.querySelector('.my-btn')
+const likedrecipebtn = document.querySelector('.liked-btn')
+const savedrecipebtn = document.querySelector('.saved-btn')
+
+const myrecipe = document.querySelector('.my-recipe')
+const likedrecipe = document.querySelector('.liked-recipe')
+const savedrecipe = document.querySelector('.saved-recipe')
+
+myrecipebtn.addEventListener('click', function showrecipe(){
+    myrecipebtn.classList.remove('muted')
+    likedrecipebtn.classList.remove('highlighted')
+    savedrecipebtn.classList.remove('highlighted')
+    myrecipe.classList.remove('hide')
+    likedrecipe.classList.remove('show')
+    savedrecipe.classList.remove('show')
+})
+likedrecipebtn.addEventListener('click', function showrecipe(){
+    myrecipebtn.classList.add('muted')
+    likedrecipebtn.classList.add('highlighted')
+    savedrecipebtn.classList.remove('highlighted')
+    myrecipe.classList.add('hide')
+    likedrecipe.classList.add('show')
+    savedrecipe.classList.remove('show')
+})
+savedrecipebtn.addEventListener('click', function showrecipe(){
+    myrecipebtn.classList.add('muted')
+    likedrecipebtn.classList.remove('highlighted')
+    savedrecipebtn.classList.add('highlighted')
+    myrecipe.classList.add('hide')
+    likedrecipe.classList.remove('show')
+    savedrecipe.classList.add('show')
+})

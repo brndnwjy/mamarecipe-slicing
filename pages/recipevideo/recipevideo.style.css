@@ -1,0 +1,182 @@
+body {
+  height: 100vh;
+  background-color: #fff5ec;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.navigation {
+  width: 90%;
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  margin: 0 5%;
+  padding-top: 30px;
+}
+
+.navigation-opt {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-opt a,
+.navigation-opt a:focus {
+  color: #2e266f;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  outline: none;
+}
+
+.main {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 50px 10% 20%;
+}
+
+.current-step {
+  height: 100%;
+  width: 100%;
+}
+
+.current-video {
+  background-image: url("../../assets/step1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50%;
+  min-height: 200px;
+  width: 90%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.current-video img {
+  width: 50px;
+}
+
+.current-step h3 {
+  width: 75%;
+  margin: 15px 0 5px;
+}
+
+.next-step h4 {
+  margin: 0 0 20px;
+}
+
+.next-video {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.next-video img {
+  max-width: 100%;
+}
+
+.next-video h6 {
+  font-size: 16px;
+  font-weight: 600;
+  width: 80%;
+  margin: 10px 0 5px;
+}
+
+.footer {
+  height: 400px;
+  width: 100%;
+  background-color: #efc81a;
+}
+
+.footer-wrap {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 10%;
+}
+
+.jargon {
+  min-width: 200px;
+  text-align: center;
+  color: #2e266f;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.tagline {
+  min-width: 200px;
+  text-align: center;
+  color: #707070;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.other-opt {
+  width: 40%;
+  min-width: 200px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.other-opt span {
+  color: #707070;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    margin-top: 350px;
+    margin-bottom: 65%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .current-step {
+    margin-bottom: 50px;
+  }
+
+  .next-video h6,
+  .current-step h3 {
+    width: 100%;
+  }
+
+  .next-step h4 {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .next-video,
+  .current-video{
+    width: 100%;
+  }
+
+  .next-video img {
+    width: 100%;
+  }
+
+  .jargon {
+    font-size: 36px;
+  }
+
+  .other-opt {
+    flex-direction: column;
+    font-size: 8px;
+  }
+}
